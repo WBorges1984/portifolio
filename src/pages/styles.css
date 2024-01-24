@@ -8,6 +8,7 @@ hmtl,
 body {
     background-color: rgb(11, 57, 68);
     font-family: "Raleway", sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -58,7 +59,7 @@ body {
 .mini-bio span {
     font-weight: bold;
     text-transform: uppercase;
-    color: rgb(151, 39, 39);
+    color: chocolate;
 }
 
 .select-menu {
@@ -96,12 +97,24 @@ body {
     border: 3px solid saddlebrown;
 }
 
-hr {
-    width: 50px;
-    color: chocolate;
-}
-
 .link-menu {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+}
+
+hr {
+    width: 70px;
+    border-bottom: 1px solid chocolate;
+}
+
+.pointer {
+    position: absolute;
+
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    filter: blur(70px);
+    overflow-y: visible;
+    /* transition: 0.2s linear; */
 }

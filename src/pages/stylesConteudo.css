@@ -5,3 +5,27 @@
 .banner {
     margin-top: 6rem;
 }
+.about {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: rgb(229, 231, 233);
+}
+
+.textoApresentacao {
+    color: rgb(229, 231, 233, 0.7);
+}
+.textoApresentacao span {
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: chocolate;
+}
+
+.linguagens {
+    color: rgb(229, 231, 233, 0.7);
+}
+code {
+    font-size: 13px;
+    color: chocolate;
+}
