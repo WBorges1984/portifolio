@@ -1,11 +1,11 @@
-.conteudo {
-    padding-right: 25px;
+main {
+    margin-right: 30px;
 }
 
 .banner {
     margin-top: 6rem;
 }
-.about {
+.title-item {
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -28,4 +28,23 @@
 code {
     font-size: 13px;
     color: chocolate;
+}
+
+.explicativo {
+    margin-top: 10px;
+}
+
+.icon-linguagens {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.language {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    align-items: center;
 }

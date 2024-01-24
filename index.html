@@ -23,7 +23,7 @@
                         sobre meus estudos em <span>About</span>
                     </p>
                     <li class="select-menu">
-                        <a href="#about" class="link-menu"><span>About</span><span><hr></span></a>
+                        <a href="#about" onclick="scrollToSection('about')" class="link-menu"><span>About</span><span><hr></span></a>
                         <a href="#experiencia" class="link-menu"><span>Experiência</span><span><hr></span></a>
                         <a href="#projetos" class="link-menu"><span>Projeto</span><span><hr></span></a>
                         <a href="#contatos" class="link-menu"><span>Contatos</span><span><hr></span></a>
@@ -50,48 +50,106 @@
                             <img src="./src/assets/img/banner.jpg" width="750" alt="banner">
                         </figure>
                     </section>
-                    <section id="#about">
-                        <h2 class="about">About</h2>
+                    <section id="about">
+                        <h2 class="title-item">About</h2>
                         <p class="textoApresentacao">
                             Olá, meu nome é Willian Borges, sou um programador Junior/Pleno 
                             que busca uma <span>oportunidade</span> para trabalhar
                             e crescer na indústria de tecnologia. Embora tenha <span>pouca
                             experiência</span> profissional em desenvolvimento de Sistemas Web/Mobile/Desktop,
                             Estou <span>estudando</span> Análise e Desenvolvimento de Software e
-                            tenho conhecimentos nas linguagens de programação:
-                            <h5 class="linguagens"><code>JavaScript</code></h5>
-                            <h5 class="linguagens"><code>CSS</code></h5>
-                            <h5 class="linguagens">*Conhecimento em <code>JAVA</code> e <code>PHP</code></h5>
-                            <h5 class="linguagens">
-                                *Pleno na Linguagem <code>Delphi</code> 10 e 11 <strong>mobile e desktop</strong>
-                            </h5>
-                            <h5 class="linguagens"><code>ReactJs</code></h5>
-                            <h5 class="linguagens">
-                                *Conhecimento em <code>C</code> | <code>C++</code> | <code>C#</code>
-                            </h5>
-                            <h5 class="linguagens"><code>MySQL</code></h5>
-                            <h5 class="linguagens"><code>API Rest</code></h5>
-                            <h5 class="linguagens"><code>Firebase</code></h5>
+                            tenho conhecimentos nas linguagens, frameworks e estilização:
+                        </p>
+                        <div class="icon-linguagens">
+                            <figure class="language">
+                                <img src="src/assets/icons/js.png" width="32" alt="JavaScript">
+                                <figcaption><code>JavaScript</code></figcaption>
+                            </figure>
+                            <figure class="language">
+                                <img src="src/assets/icons/css.png" width="32" alt="CSS">
+                                <figcaption><code>CSS</code></figcaption>
+                            </figure>
+                            <figure class="language">
+                                <img src="src/assets/icons/reactJS.jpg" width="32" alt="ReactJS">
+                                <figcaption><code>ReactJS</code></figcaption>
+                            </figure>
+                            <figure class="language">
+                                <img src="src/assets/icons/delphi.png" width="32" alt="Delphi">
+                                <figcaption><code>Delphi 11</code></figcaption>
+                            </figure>
+                            <figure class="language">
+                                <img src="src/assets/icons/Csharp.png" width="32" alt="C#">
+                                <figcaption><code>C#</code></figcaption>
+                            </figure>
+                            <figure class="language">
+                                <img src="src/assets/icons/C++.png" width="32" alt="C++">
+                                <figcaption><code>C++</code></figcaption>
+                            </figure>
+                            <figure class="language">
+                                <img src="src/assets/icons/C.png" width="32" alt="C">
+                                <figcaption><code>C</code></figcaption>
+                            </figure>
+                            <figure class="language">
+                                <img src="src/assets/icons/java.png" width="32" alt="JAVA">
+                                <figcaption><code>JAVA</code></figcaption>
+                            </figure>
+                            <figure class="language">
+                                <img src="src/assets/icons/flutter.svg" width="32" alt="Flutter">
+                                <figcaption><code>Flutter</code></figcaption>
+                            </figure>
+                            <figure class="language">
+                                <img src="src/assets/icons/php.png" width="32" alt="PHP">
+                                <figcaption><code>PHP</code></figcaption>
+                            </figure>
+                            <figure class="language">
+                                <img src="src/assets/icons/typescript.svg" width="32" alt="TypeScrip">
+                                <figcaption><code>TypeScrip</code></figcaption>
+                            </figure>
+                            <figure class="language">
+                                <img src="src/assets/icons/bootstrap.svg" width="32" alt="Bootstrap">
+                                <figcaption><code>Bootstrap</code></figcaption>
+                            </figure>
+                            <figure class="language">
+                                <img src="src/assets/icons/material-ui.svg" width="32" alt="Material UI">
+                                <figcaption><code>Material UI</code></figcaption>
+                            </figure>
+                            <figure class="language">
+                                <img src="src/assets/icons/mysql.png" width="32" alt="MySQL">
+                                <figcaption><code>MySQL</code></figcaption>
+                            </figure>
+                            <figure class="language">
+                                <img src="src/assets/icons/tailwind.png" width="32" alt="Tailwind">
+                                <figcaption><code>Tailwind</code></figcaption>
+                            </figure>
+                            <figure class="language">
+                                <img src="src/assets/icons/restapi.png" width="32" alt="RestAPI">
+                                <figcaption><code>RestAPI</code></figcaption>
+                            </figure>
+                        </div>
+
+                        <p class="textoApresentacao explicativo">
                             Também estou sempre aprendendo novas habilidades e
                             tecnologias por meio de cursos on-line, livros e projetos
                             pessoais.
-                            <br />
-                            Além disso, sou uma pessoa dedicada, organizada, que tem{" "}
-                            <a class="destaque"> fácil aprendizagem</a> e
-                            comprometida em cumprir prazos e alcançar metas.
-                            <br /> Tenho uma excelente capacidade de comunicação e
+                            
+                            Além disso, sou uma pessoa dedicada, organizada, que tem
+                            <span>fácil aprendizagem</span> e
+                            <span>comprometido</span> em cumprir prazos e alcançar metas. 
+                            <br><br>
+                            Tenho uma excelente <span>capacidade de comunicação</span> e
                             trabalho em equipe, o que me permite colaborar com outros
-                            desenvolvedores para criar soluções de alta qualidade.
-                            <br />
+                            desenvolvedores para criar soluções de <span>alta qualidade</span>.
+                            <br><br>
                             Estou muito animado em encontrar uma oportunidade para
-                            trabalhar em uma empresa de tecnologia onde possa continuar
-                            a aprender e desenvolver minhas habilidades. Se você estiver
+                            trabalhar em uma empresa de tecnologia onde possa <span>continuar
+                            a aprender</span> e desenvolver minhas habilidades. Se você estiver
                             procurando por um programador Junior dedicado e trabalhador,
                             não hesite em entrar em contato comigo.
-                            <br />
-                            Obrigado pela sua consideração e estou ansioso para ouvir de
-                            você em breve.
+                            <br>
                         </p>
+                    </section>
+                    <section id="experiencia">
+                        <h2 class="title-item">Experiêcia</h2>
                     </section>
                 </div>
         
@@ -103,6 +161,16 @@
             $('.pointer').css({left:event.pageX, top:event.pageY})
         })
     </script>
+
+<script>
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        window.scrollTo({
+            top: section.offsetTop,
+            behavior: 'smooth' // Adiciona rolagem suave
+        });
+    }
+</script>
     
 </body>
 </html>
